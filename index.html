@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=" icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" >
+            <h1>Animeru</h1>
+        </a>
+    </header>
+
+
+    <form onsubmit="getAnime(event)">
+        <input type="text" id="search-product" name="anime" placeholder="Search title..." autocomplete="off">
+        <button type="submit" id="search-btn">Search</button>
+    </form>
+
+    <section id="animes-section">
+        <div id="anime-container">
+            <div id="anime-info">
+
+            </div>
+
+        </div>
+    </section>
+    <button  class="go-up-btn"><img src="/images/flecha-arriba.png" alt="button" id="button-image"></button>
+    <script src="index.js"></script>
+    <script src="goUp.js"></script>
+</body>
+
+</html>

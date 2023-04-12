@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.911);
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(234, 8, 8);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: space-between;
+}
+
+
+
+
+header h1 {
+    margin: 15px;
+    font-size: 100px
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: auto;
+}
+
+input {
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px;
+
+}
+
+#search-btn {
+    height: 33px;
+    width: 100px;
+    margin-left: 5px;
+    background-color: #0799ee;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+    background-color: #0799eec4;
+}
+
+
+#animes-section #anime-info {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 100px;
+}
+
+#animes-section #anime-info .anime-container {
+    display: grid;
+    place-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#animes-section #anime-info .anime-container img {
+    margin-bottom: 15px;
+    width: 150px;
+    height: 200px;
+    border: 3px solid #000;
+}
+
+
+#animes-section #anime-info .anime-container img:hover {
+    cursor: pointer;
+}
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: medium;
+    color: rgb(234, 8, 8);
+    width: 60%;
+}
+
+
+h2:hover {
+    color: rgb(222, 110, 110);
+    cursor: pointer;
+}
+
+
+.go-up-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+
+}
+
+.go-up-btn #button-image {
+    width: 25px;
+    vertical-align: middle;
+
+}
+
+
+@media (max-width:360px) {
+
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    input {
+        width: 300px;
+    }
+
+    #search-btn {
+        margin-top: 20px;
+    }
+
+    #animes-section #anime-info {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+        width: 100%;
+    }
+
+    #animes-section #anime-info .anime-container img {
+        width: 100px;
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 412px) {
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     
+    }
+
+    #animes-section #anime-info {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media (max-width: 554px) {
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    input{
+        width: 300px;
+    }
+
+    #search-btn {
+        margin-top: 5px;
+    }
+
+
+    #animes-section #anime-info {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #animes-section #anime-info .anime-container {
+       position: relative;
+    }
+
+
+   h2{
+   width: max-content;
+   font-size: 25px;
+   }
+}
