@@ -180,39 +180,27 @@ h2:hover {
     }
 }
 
-
-
+/* Media query for screens 554px and smaller */
 @media (max-width: 554px) {
     form {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
-       
+        justify-items: center;
     }
 
-    input{
-        width: 300px;
+    input {
+        width: 100%; 
     }
 
     #search-btn {
-        margin-top: 5px;
+        margin-top: 10px;
     }
-
 
     #animes-section #anime-info {
-        display: grid;
-        place-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; 
     }
 
-    #animes-section #anime-info .anime-container {
-       position: relative;
+    h2 {
+        font-size: 20px; 
     }
-
-
-   h2{
-   width: max-content;
-   font-size: 25px;
-   }
 }
